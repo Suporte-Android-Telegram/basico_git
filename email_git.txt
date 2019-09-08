@@ -1,0 +1,16 @@
+Como adicionar o seu e-mail do git ao terminal?
+
+Primeiramente você terá que ter o git instalado na sua máquina Linux ou Windows Ubuntu Bash.
+no caso será para o Ubuntu: sudo apt-get install git.
+para o Arch Linux: pacman -S git ou yay -S git.
+
+Depois disso você terá que fazer uma conta no github, além de fazer a verificação de e-mail.
+Depois é só seguir o exemplo do comando abaixo:
+
+Vamos supôr que o seu nome é José e seu username é joserodrigues24...
+para configurar o username você usará o comando: "git config --global user.name joserodrigues24"
+
+Agora para configurar o e-mail, vamos supôr que seja: joserodrigues24@git.com
+para configurar o e-mail você usará o comando: "git config --global user.email joserodrigues24@git.com"
+
+assim, sua máquina estará preparada para trabalhar com o git, assim podendo fazer alterações em seus dispositivos remotos.
