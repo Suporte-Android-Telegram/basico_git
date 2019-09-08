@@ -1,0 +1,45 @@
+Pushing Para Seus Remotos
+
+Quando o seu projeto estiver pronto para ser compartilhado, você tem que enviá-lo para a fonte. O comando para isso é simples: git push [nome-remoto] [branch]. Se você quer enviar o seu branch master para o servidor origin (novamente, clonando normalmente define estes dois nomes para você automaticamente), então você pode rodar o comando abaixo para enviar o seu trabalho para o servidor:
+$ git push origin master
+
+Este comando funciona apenas se você clonou de um servidor que você têm permissão para escrita, e se mais ninguém enviou dados no meio tempo. Se você e mais alguém clonarem ao mesmo tempo, e você enviar suas modificações após a pessoa ter enviado as dela, o seu push será rejeitado. Antes, você terá que fazer um pull das modificações deste outro alguém, e incorporá-las às suas para que você tenha permissão para enviá-las. Veja o Capítulo 3 para mais detalhes sobre como enviar suas modificações para servidores remotos.
+
+Inspecionando um Remoto:
+Se você quer ver mais informação sobre algum remoto em particular, você pode usar o comando git remote show [nome-remoto]. Se você rodar este comando com um nome específico, como origin, você verá algo assim:
+
+$ git remote show origin
+* remote origin
+  URL: git://github.com/schacon/ticgit.git
+  Remote branch merged with 'git pull' while on branch master
+    master
+  Tracked remote branches
+    master
+    ticgit
+
+Ele lista a URL do repositório remoto assim como as branches sendo rastreadas. O resultado deste comando lhe diz que se você está na branch master e rodar git pull, ele automaticamente fará um merge na branch master no remoto depois que ele fizer o fetch de todas as referências remotas. Ele também lista todas as referências remotas que foram puxadas.
+Este é um simples exemplo que você talvez encontre por aí. Entretanto, quando se usa o Git pra valer, você pode ver muito mais informação vindo de git remote show:
+
+$ git remote show origin
+* remote origin
+  URL: git@github.com:defunkt/github.git
+  Remote branch merged with 'git pull' while on branch issues
+    issues
+  Remote branch merged with 'git pull' while on branch master
+    master
+  New remote branches (next fetch will store in remotes/origin)
+    caching
+  Stale tracking branches (use 'git remote prune')
+    libwalker
+    walker2
+  Tracked remote branches
+    acl
+    apiv2
+    dashboard2
+    issues
+    master
+    postgres
+  Local branch pushed with 'git push'
+    master:master
+
+Este comando mostra qual branch é automaticamente enviado (pushed) quando você roda git push em determinados branches. Ele também mostra quais branches remotos que estão no servidor e você não tem, quais branches remotos você tem e que foram removidos do servidor, e múltiplos branches que são automaticamente mesclados (merged) quando você roda git pull.
