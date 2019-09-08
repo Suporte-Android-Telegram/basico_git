@@ -1,0 +1,13 @@
+Removendo e Renomeando Remotos
+
+Se você quiser renomear uma referência, em versões novas do Git você pode rodar git remote rename para modificar um apelido de um remoto. Por exemplo, se você quiser renomear pb para paul, você pode com git remote rename:
+$ git remote rename pb paul
+$ git remote
+origin
+paul
+
+É válido mencionar que isso modifica também os nomes dos branches no servidor remoto. O que costumava ser referenciado como pb/master agora é paul/master.
+Se você quiser remover uma referência por qualquer razão — você moveu o servidor ou não está mais usando um mirror específico, ou talvez um contribuidor não está mais contribuindo — você usa git remote rm:
+$ git remote rm paul
+$ git remote
+origin
