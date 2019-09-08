@@ -1,0 +1,18 @@
+O que é Git?
+O Git é um sistema open-source de controle de versão utilizado pela grande maioria dos desenvolvedores atualmente. Com ele podemos criar todo histórico de alterações no código do nosso projeto e facilmente voltar para qualquer ponto para saber como o código estava naquela data.
+
+Além disso, o Git nos ajuda muito a controlar o fluxo de novas funcionalidades entre vários desenvolvedores no mesmo projeto com ferramentas para análise e resolução de conflitos quando o mesmo arquivo é editado por mais de uma pessoa em funcionalidades diferentes.
+Pontos na história:
+
+Tudo no Git é movido através dos pontos na história do projeto que são chamados de commits, esses pontos são formados por conjuntos de alterações em um ou mais arquivos e somados a um descritivo que resume as alterações nesse ponto.
+De forma prática, pensando que tenhamos que desenvolver um sistema de login completo, nossos commits podem ficar dessa forma:
+
+- Configuração da estrutura do projeto
+- Estrutura da página de login
+- Estilos CSS da página de login
+- Estrutura da página de cadastro
+- Resolvido problema no login
+- Estilos CSS da página de cadastro
+
+Veja que nossos commits descrevem exatamente as alterações que o código sofreu e além do título podemos detalhar ainda mais com um texto maior.
+É muito importante essas informações estarem bem completas para que todos do time (inclusive você no futuro) possam entender o que foi feito nesse ponto.
