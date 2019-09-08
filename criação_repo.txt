@@ -1,0 +1,8 @@
+Como criar um repositório no Github?
+É muito simples, só ir em github.com/seuusername e ir na parte de "Repositories" e apertar em NEW!
+
+Depois disso você pode escolher em qual conta será criada o repositório, na segunda opção depois da "/" você poderá colocar o nome do seu repositório.
+Abaixo você poderá colocar uma breve descrição informando o intuito da criação do repositório.
+
+Também você poderá escolher seu o repositório será público ou privado,
+assim você não terá problemas com pessoas bisbilhotando suas coisas. :)
